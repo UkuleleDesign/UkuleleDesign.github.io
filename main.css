@@ -21,7 +21,8 @@ ul, ol { margin-left: 30px; }
 li > ul, li > ol { margin-bottom: 0; }
 
 /** Headings */
-h1, h2, h3, h4, h5, h6 { font-weight: 300; }
+h1 { font-weight: bold; }
+h2, h3, h4, h5, h6 { font-weight: 300; }
 
 /** Links */
 a { color: #111; text-decoration: none; }
@@ -45,7 +46,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
 .icon > svg path { fill: #828282; }
 
-* { font-family: 'Whitney SSm A', 'Whitney SSm B'; font-style: normal; font-weight: 300; }
+* { font-family: 'Helvetica'; font-style: normal; font-weight: 300; }
 
 html { width: 100%; height: 100%; font-size: 14px; }
 
