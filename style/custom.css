@@ -42,7 +42,7 @@ a.plink-1:visited {color:#42b4bb;}
 
 .lead {
   font-size: 1.375em;}
-  
+
 .upper-btn {
     float: right;
     position: absolute;
@@ -86,11 +86,13 @@ a.plink-1:visited {color:#42b4bb;}
 .first-ico { margin-top:3em !important;}
 .nav--transparent {box-shadow: none !important;}
 
-	
-@media all and (max-width: 767px) { 
+
+@media all and (max-width: 767px) {
 
 .height-100 {min-height:400px;}
 .heroshot { height: 520px !important; }
+.lead { font-size: 1.45em !important; }
+.background-image-holder { background-position: 70% 50% !important; }
  h1,
   .h1 {
     font-size: 3em;
