@@ -28,6 +28,11 @@
       s.parentNode.insertBefore(hm, s);
     })();
 
+    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+    function showMailingPopUp() {
+      require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"0b2ceb9dfd925f3d59aa78c4c","lid":"d131a39411"}) })
+    };
+
     var language = window.navigator.userLanguage || window.navigator.languages[0] || window.navigator.language;
     if (language === "zh-CN")
         window.location.href = "http://ukulele.design/cn/";
@@ -235,7 +240,7 @@
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1 text-center">
 							<h4>Want to learn more?</h4>
-							<a class="btn btn--primary vpe" href="">
+							<a class="btn btn--primary vpe" href="" id="open-popup">
 								<span class="btn__text">
 									Subscribe to newsletter</span>
 							</a>
@@ -266,7 +271,7 @@
 		    </div>
 		</footer>
 		</div>
-
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
     <script src="./style/jquery-2.1.4.min.js"></script>
     <script src="./style/jquery.easing.min.js"></script>
     <script src="./style/scrolling-nav.js"></script>
